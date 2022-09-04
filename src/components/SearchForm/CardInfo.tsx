@@ -67,6 +67,10 @@ export default class CardInfo extends Component<Props, State> {
                             repositoryUrl: res.data.repos_url,
                         },
                         isLoading: false,
+                        requestError: {
+                            hasError: false,
+                            errors: []
+                        },
                     })
                 }
             }).catch((err) => {
